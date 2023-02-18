@@ -30,6 +30,9 @@ Vous pouvez ensuite installer toutes les extensions dont vous aurez besoin avec 
 pip install -r requirements.txt
 ```
 
+Cette commande va télécharger toutes les extensions utiles.
+
+
 # Contenu rapide
 
 Des répertoires numérotés ont été écrits pour donner un ordre de lecture. Commencez de préférence par le répertoire `01_les_bases`.
