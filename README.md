@@ -13,9 +13,9 @@ Ce format permet de tester et de vérifier que les lignes de code Python fonctio
 
 # Installation
 
-Vous aurez sûrement téléchargé ce dépôt depuis github. Il faut avoir installé Python3 sur son ordinateur et ensuite, ce dépôt propose d'installer un environnement virtuel.
+Vous aurez sûrement téléchargé ce dépôt depuis github. Il faut avoir installé Python3 sur son ordinateur et ensuite, ce dépôt propose d'installer un environnement virtuel. Je présente d'abord la méthode générale et ensuite la méthode à utiliser avec Visual Studio Code.
 
-En vous plaçant sur ce répertoire dans un shell, vous pouvez re-créer l'environnement virtuel avec la commande suivante.
+Dans la mthode générale, on réalise l'installation à partir d'un shell. On crée l'environnement virtuel avec la commande suivante.
 
 ```bash
 python3 -m venv .venv
@@ -31,6 +31,9 @@ pip install -r requirements.txt
 ```
 
 Cette commande va télécharger toutes les extensions utiles.
+
+Si vous êtes sous Visual Studio Code, le mieux est d'utiliser les commandes prévues dans cet éditeur pour installer un environnement virtuel, car l'installation va en même tant s'occuper de droit d'accès sous cet éditeur. Pour cela on appelle la palette de commande avec les touches `Ctrl-Shift-p` et on entre la phrase `Python: créer un environnement` (si sous êtes avec un affichage Anglais, il faut l'écrire en Anglais). La commande exact devrait apparaître. Elle va proposer de créer cet environnement virutel, va vous demander quel programme Python utiliser (au cas où vous en ayez plusieurs) et ensuite vous proposera aussi de charge le fichier `requirements.txt` qui chargera toutes les extensions utiles. On trouvera ces explicaitions (en anglais) sur [le site de Visual Studio Code](https://code.visualstudio.com/docs/python/environments).
+
 
 
 # Contenu rapide
