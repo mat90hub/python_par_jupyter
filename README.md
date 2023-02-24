@@ -13,16 +13,16 @@ Ce format permet de tester et de vérifier que les lignes de code Python fonctio
 
 # Installation
 
-Vous aurez sûrement téléchargé ce dépôt depuis github. Il faut avoir installé Python3 sur son ordinateur et ensuite, ce dépôt propose d'installer un environnement virtuel. Je présente d'abord la méthode générale et ensuite la méthode à utiliser avec Visual Studio Code.
+Vous aurez sûrement téléchargé ce dépôt depuis github. Il faut avoir installé Python3 sur son ordinateur. Ensuite, je préconise d'installer un environnement virtuel, pour être sûr que vous ayez les mêmes extensions que celles que j'ai utilisées. Je présente d'abord la méthode générale pour installer un environnement virtuel Python. Mais si comme moi vous utilisez Visual Studio Code, attendez d'arriver jusqu'à la fin de ce chapitre avant de lancer ces commandes, car Visual Studio Code propose sa méthode propre, qui a l'avantage de régler en même temps d'autre problème sous-jacent lié à cet éditeur. Donc lisez la méthode générale pour comprendre comment ça marche, mais appliquez la méthode dédiée à Visual Studio Code pour ensuite gagner du temps.
 
-Dans la mthode générale, on réalise l'installation à partir d'un shell. On crée l'environnement virtuel avec la commande suivante.
+Dans la méthode générale, l'installation se fait dans un shell. L'environnement virtuel se construit avec la commande suivante.
 
 ```bash
 python3 -m venv .venv
 ```
 (`python3` est le nom supposé de l'exécutable de Python3, ce peut être aussi `python` sur votre installation).
 
-Cette commande installe les exécutables Python sur le sous-répertoire `.venv`. Quand vous ouvrez un terminal, le ligne de commande devrait normalement commencer par `(.venv)` qui indique que vous êtes bien dans l'environnement virtuel Python.
+Cette commande installe les exécutables Python sur le sous-répertoire `.venv` (vous pouvez changer le nom de ce répertoire, mais celui ci sera le nom par défaut qui sera proposé avec la méthode proposée par Visual Studio Code). Quand vous ouvrez un terminal, le ligne de commande devrait normalement commencer par `(.venv)` qui indique que vous êtes bien dans l'environnement virtuel Python.
 
 Vous pouvez ensuite installer toutes les extensions dont vous aurez besoin avec la commande suivante sous cet environnement.
 
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 Cette commande va télécharger toutes les extensions utiles.
 
-Si vous êtes sous Visual Studio Code, le mieux est d'utiliser les commandes prévues dans cet éditeur pour installer un environnement virtuel, car l'installation va en même tant s'occuper de droit d'accès sous cet éditeur. Pour cela on appelle la palette de commande avec les touches `Ctrl-Shift-p` et on entre la phrase `Python: créer un environnement` (si sous êtes avec un affichage Anglais, il faut l'écrire en Anglais). La commande exact devrait apparaître. Elle va proposer de créer cet environnement virutel, va vous demander quel programme Python utiliser (au cas où vous en ayez plusieurs) et ensuite vous proposera aussi de charge le fichier `requirements.txt` qui chargera toutes les extensions utiles. On trouvera ces explicaitions (en anglais) sur [le site de Visual Studio Code](https://code.visualstudio.com/docs/python/environments).
+Sous Visual Studio Code, il faut utiliser les commandes prévues dans l'éditeur pour installer un environnement virtuel. Pour cela on appelle la palette de commande avec les touches `Ctrl-Shift-p` et on entre la phrase `Python: Créer l'environnement` (si sous êtes avec un affichage Anglais, il faut l'écrire en Anglais). La commande exacte devrait apparaître et vous la sélectionner. Elle propose de créer un environnement virtuel Python. Vous sélectionnerez le programme Python à utiliser (au cas où vous en ayez plusieurs versions localement comme sous Linux ou j'ai encore Python2). Ensuite on vous demande si vous voulez sélectionner le fichier `requirements.txt`, ce qu'il faut faire. Ceci chargera toutes les extensions que j'ai prévue d'utiliser (selon votre configuration et votre connexion internet, cela peut être long). On trouvera ces explications (en anglais) sur [le site de Visual Studio Code](https://code.visualstudio.com/docs/python/environments).
 
 
 
