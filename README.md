@@ -41,4 +41,14 @@ Sous Visual Studio Code, il faut utiliser les commandes prévues dans l'éditeur
 Des répertoires numérotés ont été écrits pour donner un ordre de lecture. Commencez de préférence par le répertoire `01_les_bases`.
 
 
+# Augmenter les exemples
+
+Si vous ajoutez des exemples qui utilisent d'autres extensions, n'oubliez pas de mettre à jour régulièrement le fichier [requirements.txt](requirements.txt) avec la commande suivante.
+
+```bash
+pip freeze > requirements.txt
+```
+
+
+
 Bonne lecture !

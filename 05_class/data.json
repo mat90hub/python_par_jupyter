@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Zero to one",
+        "subtitle": "Notes on startups",
+        "author": "Peter Thiel",
+        "publisher": "Ballantine Books",
+        "price": 14.49,
+        "isbn_10": 134563
+    },
+    {
+        "title": "The lean startup",
+        "subtitle": "How Relenless changes creates redically successfull business",
+        "author": "Eric Ries",
+        "publisher": "Penguin UK",
+        "price": 12.96
+    }
+]

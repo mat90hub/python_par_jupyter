@@ -1,6 +1,7 @@
-# mes fichiers particuliers
+# mes fichiers particuliers à omettre
 notes.md
-
+*/othersource/*
+/01_les_bases/fichier.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
