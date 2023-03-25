@@ -4,6 +4,9 @@ notes.md
 /01_les_bases/*.txt
 /01_les_bases/*.json
 /02_std_ext/*.json
+/02_std_ext/*.xl*
+/02_std_ext/*.csv
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
