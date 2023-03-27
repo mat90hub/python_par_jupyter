@@ -54,11 +54,9 @@ pip freeze > requirements.txt
 On peut aussi de temps en temps mettre à jour les paquets de la machine virtuelle si on en a créé une. Ceci se fait avec les commandes suivantes dans le répertoire racine de ce dépôt.
 
 ```bash
-python -m venv --upgrade .
-python -m venv --upgrade-deps .
+python -m venv --upgrade .venv
+python -m venv --upgrade-deps .venv
 ```
-
-
 
 # Imprimer !
 
