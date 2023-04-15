@@ -7,4 +7,5 @@ Il existe aussi d’autres outils pour faire du calcul scientifiques. En voici l
 — [matlab](https://fr.mathworks.com/products/matlab.html?s_tid=hp_products_matlab)
 — [wolfram mathematica](https://www.wolfram.com/mathematica/)
 — [mathcad](https://www.mathcad.com/fr)
+— [mapple](https://fr.maplesoft.com/products/Maple/)
 
