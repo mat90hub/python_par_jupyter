@@ -45,6 +45,10 @@ Le symétrique est simplement le complément à 5.
 
 Ce groupe conserve aussi la commutativité qui existe pour l'addition *normale* des entiers relatifs.
 
+Voyons une application pratique, nous voulons résoudre l'équation suivante dans ce groupe : $ x + 2 = 1$
+
+
+
 Il existe des groupes cycliques bien connus comme les secondes et les minutes ou les heures. Si on ne tient pas compte de la retenu convertissant les secondes en minutes, les minutes en heures, il s'agit de groupe cycliques. On utilise couramment le symétrique quand on lieu de dire *trois- heures-moins-le-quart*, on dit *deux-heures trois-quart*.
 
 Mais tout n'est pas un groupe. Par exemple, les entiers relatifs munis de la multiplication ne sont pas un groupe, car il n'existe pas d'inverse dans les entiers relatifs.
@@ -66,9 +70,7 @@ Si la multiplication est commutative, l'anneau est commutatif.
 
 Une première propriété qu'on peut déduire sur ces structure d'anneau est que l'élément neutre de l'addition est toujours un élément absorbant pour la multiplication :
 
-$$
-\forall a , \quad a \times 0 = a \times (1 - 1) = a - a = 0
-$$
+$ \displaystyle \forall a , \quad a \times 0 = a \times (1 - 1) = a - a = 0 $
 
 Cette démonstration utilise uniquement:
 
@@ -81,15 +83,11 @@ Cette propriété sera donc toujours valable quelque soit l'ensemble, du moment 
 
 Une structure d'anneau commutatif est déjà très utile. Elle permet par exemple d'utiliser les formules de développements du binôme.
 
-$$
-(x + y)^n = \sum_1^n C_n^k x^k\cdot y^{n-k}
-$$
+$ \displaystyle (x + y)^n = \sum_1^n C_n^k x^k\cdot y^{n-k} $
 
 ainsi que les autres propriétés similaires comme celle ci :
 
-$$
-(x - y) (x + y) = x^2 - y^2
-$$
+$ \displaystyle (x - y) (x + y) = x^2 - y^2 $
 
 On peut ainsi utiliser toutes les formules qui ne font pas intervenir de division, car dans un anneau, les éléments n'ont pas d'inverse.
 
@@ -130,17 +128,13 @@ Nous avons vu plus haut que l'ensemble des matrices avec l'addition et la compos
 
 Dans un espace vectoriel, une famille de vecteurs est dite liée, s'il existe des scalaires du corps associé tel que:
 
-$$
-(V_i)_i \, \text{est liée} \Longleftrightarrow \exists (\lambda)_i \in K ,\quad \sum \lambda_i V_i = 0
-$$
+$ \displaystyle (V_i)_i \, \text{est liée} \Longleftrightarrow \exists (\lambda)_i \in K ,\quad \sum \lambda_i V_i = 0 $
 
 Une **famille libre** est une famille qui n'est pas liée : il n'existe pas de paramètres non nuls permettant de faire une combinaison linéaire aboutissant au vecteur nul.
 
 Une **famille génératrice** est une famille de vecteurs $(V_i)_i$ tel que pour tout vecteur, on pourra le décomposer avec cette famille.
 
-$$
-(V_i)_i \, \text{est génératrice} \Longleftrightarrow\forall V \quad \exists (\lambda_i)_i \quad \sum \lambda_i V_i = V
-$$
+$ \displaystyle (V_i)_i \, \text{est génératrice} \Longleftrightarrow\forall V \quad \exists (\lambda_i)_i \quad \sum \lambda_i V_i = V$
 
 Une **base** est une famille libre et génératrice. Elle permet de faire une décomposition unique de tous les vecteurs de l'espace vectoriel.
 
@@ -152,9 +146,7 @@ Ce qu'on peut retenir de ceci, c'est que quand on a une structure d'espace vecto
 
 Une [application](https://fr.wikibooks.org/wiki/Alg%C3%A8bre/Fonctions_et_applications) d'un ensemble $E$ dans un ensemble $F$ (ou de $E$ vers $F$) est une correspondance, qui à tout élément $x$ de $E$ associe un et un seul élément $y$ de l'ensemble $F$.
 
-$$
-\forall x \in E ,\quad \exists ! \, y \in F \quad \backslash \quad y = f(x)
-$$
+$\displaystyle \forall x \in E ,\quad \exists ! \, y \in F \quad / \quad y = f(x)$
 
 - $y$ est appelée l'image de $x$ par $f$ et se note $f(x)$.
 - $x$ est un antécédent de $y$ par $f$.
@@ -167,15 +159,11 @@ De part ses propriétés, une application peut se représenter par un graphe, l'
 
 Une application est injective si quand deux antécédents sont différents alors leurs images sont différentes.
 
-$$
-\forall (x,y) \in E, \quad x \neq y \,\Longrightarrow \, f(x) \neq f(y)
-$$
+$\displaystyle \forall (x,y) \in E, \quad x \neq y \,\Longrightarrow \, f(x) \neq f(y)$
 
 On peut aussi utiliser la contraposée de cette proposition (voir un cours de logique).
 
-$$
-\forall (x,y) \in E, \quad f(x) = f(y) \, \Longrightarrow \, x = y
-$$
+$\displaystyle  \forall (x,y) \in E, \quad f(x) = f(y) \, \Longrightarrow \, x = y$
 
 En représentation graphique, cela veut dire que le graphe ne coupera n'importe quelle droite horizontale qu'en un seul point. Par exemple, une parabole n'est pas un graphe d'application injective.
 
@@ -189,9 +177,7 @@ Sur le graphe, cela veut dire qu'une droite horizontale rencontre toujours le gr
 
 Une application est bijective si et seulement si elle est injective et surjective. Cela veut dire que tout élément de $F$ a un et un seul antécédent dans $E$.
 
-$$
-\forall y \in F ,\quad \exists ! \, x \in E \quad \backslash \quad y = f(x)
-$$
+$\displaystyle \forall y \in F ,\quad \exists ! \, x \in E \quad \backslash \quad y = f(x)$
 
 Cette expression est très similaire à celle d'une application et de fait, si une application est bijective, il existe alors toujours une application inverse $f^{-1}$.
 
@@ -201,9 +187,7 @@ Une application est appelée un morphisme quand elle s'effectue d'une structure 
 
 Dans un morphisme de groupe, on aura donc.
 
-$$
-f: (E, *) \mapsto  (G, \times) \quad / \quad f(x * y) = f(x) \times f(y)
-$$
+$\displaystyle f: (E, *) \mapsto  (G, \times) \quad / \quad f(x * y) = f(x) \times f(y)$
 
 Si $e$ est l'élément neutre de E, $\quad e'$ l'élément neutre de G, $\quad f(e) = e'$.
 
@@ -211,9 +195,7 @@ Pour les anneaux et les corps, le morphisme doit avoir ces propriétés pour les
 
 Pour les espaces vectoriels, cette propriété doit s'appliquer pour l'opération externe.
 
-$$
-f(\lambda \cdot x) = \lambda \circ f(x)
-$$
+$\displaystyle f(\lambda \cdot x) = \lambda \circ f(x)$
 
 En tant qu'application, un morphisme peut être injectifs, surjectifs ou bijectif. Les morphismes bijectifs sont très importants et on les nomme **automorphismes**.
 
